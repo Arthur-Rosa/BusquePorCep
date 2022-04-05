@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cep</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="res/jquery-126.js"></script>
+    <script type="text/javascript" src="res/jquery-mask.js"></script>
+  </head>
+  <body>
+    <img class="logo" src="images/Component1.png">
+    <div class="content">
+        <form>
+          <input type="text" name="cep" id="cep" placeholder="Digite um cep..." required />
+          <input type="submit" value="Procurar" data-add-button />
+        </form>
+        <table id="tabela">
+          <tr>
+            <th>CEP</th>
+            <th>LOGRADOURO</th>
+            <th>BAIRRO</th>
+            <th>LOCALIDADE</th>
+            <th>UF</th>
+          </tr>
+        </table>
+      </div>
+  </body>
+    
+    <script src="res/getValues.js"></script>
+    <script src="res/setCep.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#cep").mask("99999-999");
+    });
+    </script>
+</html>
